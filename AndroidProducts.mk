@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/descendant_X00TD.mk
+    $(LOCAL_DIR)/nad_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    descendant_X00TD-user \
-    descendant_X00TD-userdebug \
-    descendant_X00TD-eng
+    nad_X00TD-user \
+    nad_X00TD-userdebug \
+    nad_X00TD-eng
