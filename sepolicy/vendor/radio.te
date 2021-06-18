@@ -1,5 +1,11 @@
+binder_call(radio, cnd)
 set_prop(radio, baseband_prop)
-allow radio hal_cacert_hwservice:hwservice_manager { add find };
-allow radio hidl_base_hwservice:hwservice_manager { add find };
-allow radio vendor_file:file { open read getattr map execute };
-allow radio hal_datafactory_hwservice:hwservice_manager { add find };
+
+allow radio hal_cacert_hwservice:hwservice_manager { find };
+allow radio hidl_base_hwservice:hwservice_manager { add };
+allow radio hal_datafactory_hwservice:hwservice_manager { find };
+allow radio hal_iwlan_hwservice:hwservice_manager { find };
+allow radio cnd:binder { transfer };
+
+get_prop(radio, qcom_ims_prop)
+get_prop(radio, vendor_qcom_ims_prop)
