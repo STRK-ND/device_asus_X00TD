@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/aosp/common.mk)
 
 #Gapps
-USE_GAPPS=true
+USE_GAPPS := true
 TARGET_INCLUDE_AOSP_REPLACEMENT := true
 
 # Poduct spec
