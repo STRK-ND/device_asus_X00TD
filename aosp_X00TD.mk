@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Inherit some common AEX_ROM stuff
 $(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product,  vendor/gapps/config.mk)
 
 #Gapps
 USE_GAPPS := true
