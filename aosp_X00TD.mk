@@ -26,6 +26,7 @@ $(call inherit-product,  vendor/gapps/config.mk)
 #Gapps
 USE_GAPPS := true
 TARGET_INCLUDE_AOSP_REPLACEMENT := true
+GAPPS_VARIANT := stock 
 
 # Poduct spec
 TARGET_INCLUDE_WIFI_EXT := true
