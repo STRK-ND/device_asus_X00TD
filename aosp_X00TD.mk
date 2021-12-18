@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Spark stuff
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common AOSP stuff
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Poduct spec
 TARGET_INCLUDE_WIFI_EXT := true
@@ -29,16 +29,13 @@ TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 scr_resolution := 1080
 
-#SPARK OFFICIAL
-SPARK_BUILD_TYPE := OFFICIAL
-
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00TD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := spark_X00TD
+PRODUCT_NAME := aosp_X00TD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="raven-user 12 SD1A.210817.036 7805805 release-keys"
